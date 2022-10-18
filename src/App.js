@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
@@ -43,7 +43,7 @@ function App() {
   }
 
   // get messages from server
-  useEffect(() => {
+  React.useEffect(() => {
     if (getMessages) {
 
       fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
