@@ -15,6 +15,11 @@ function App() {
   // to store from user
   const [messageList, setMessageList] = React.useState([])
 
+  // showFeed
+  const [showFeed, setShowFeed] = React.useState(false)
+
+  // state
+  const [state, setState] = React.useState('Show FeedBacks')
   // send message to server
   const submitFeedback = () => {
     if (userName === '' || userMessage === '') {
@@ -65,6 +70,17 @@ function App() {
     }
   }, [getMessages])
 
+// HandleFeedback
+const toggleFeedBack = () => {
+  if(showFeed === false){
+    setState('Hide FeedBacks')
+    setShowFeed(true)
+  }
+  else{
+    setState('Show FeedBacks')
+    setShowFeed(false)
+  }
+} 
 
   return (
     <div className='app-container'>
@@ -72,23 +88,31 @@ function App() {
         <h2>Feedback Form</h2>
         <TextField
           required
-          id="outlined-required"
+          className='fields'
+          id="outlined-textarea"
           label="Full Name"
+          fullWidth
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
         />
         <TextField
           id="outlined-textarea"
+          className='fields'
           label="Feedback"
           rows={4}
           multiline
+          fullWidth
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
         />
         <Button variant="contained" onClick={submitFeedback}>Submit</Button>
       </div>
+      <Button variant="contained" onClick={toggleFeedBack}>{state}</Button>
 
-      <div className="feedback-container">
+
+      {
+        showFeed ? 
+        <div className="feedback-container">
         {messageList && messageList.map((e, id) => {
           return(
             <div className="feedback-item" key={id}>
@@ -98,6 +122,8 @@ function App() {
           )
         })}
       </div>
+      : null
+      }
     </div>
   );
 }

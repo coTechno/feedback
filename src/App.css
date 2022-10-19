@@ -20,8 +20,14 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
-
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(251 249 249 / 60%) !important;
+}
+.form-container .fields{
+  color: #fff;
+}
 .feedback-container {
   max-width: 600px;
   margin: 0 auto;
