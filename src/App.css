@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
 body {
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Exo 2', sans-serif;
   color: white;
 }
 .app-container {
@@ -25,7 +36,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
   color: rgb(251 249 249 / 60%) !important;
 }
-.form-container .fields{
+.form-container .fields {
   color: #fff;
 }
 .feedback-container {
