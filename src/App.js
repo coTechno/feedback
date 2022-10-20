@@ -34,6 +34,17 @@ function App() {
     setAlert('success')
   
     fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
+    // fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userName: userName,
+          userMessage: userMessage
+        }),
+      }
     )
       .then((res) => res.json())
       .then((data) => {
@@ -50,6 +61,7 @@ function App() {
     if (getMessages) {
 
       fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
+      // fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
@@ -84,23 +96,19 @@ setTimeout(() => {
 }, 5000);
   return (
     <div className='app-container'>
+      <div id="alert">
       {
          alert === 'error' ? 
-         <Alert severity="error">Please enter the details!</Alert>
+         <Alert severity="error" className='alert'>Please enter the details!</Alert>
          :<></>
       }
       {
         alert === 'success' ?
-        <Alert severity="success">Thanks for your Feedback!</Alert>
+        <Alert severity="success" className='alert'>Thanks for your Feedback!</Alert>
         : <></>
 
       }
-
-      {/* <Alert severity="error">Please enter the details!</Alert> */}
-      
-      {/* <Alert severity="success">Thanks for your Feedback!</Alert> */}
-
-
+      </div>
       <div className="form-container">
         <h2>Feedback Form</h2>
         <TextField
