@@ -1,6 +1,8 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import Alert from '@mui/material/Alert';
+
 
 import './App.css';
 
@@ -18,15 +20,21 @@ function App() {
   // showFeed
   const [showFeed, setShowFeed] = React.useState(false)
 
+  // showAlert
+  const [alert, setAlert] = React.useState('')
+
   // state
   const [state, setState] = React.useState('Show FeedBacks')
   // send message to server
   const submitFeedback = () => {
-    if (userName === '' || userMessage === '') {
-      alert('Please enter the details!')
-      return
-    }
-    fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
+    if(userName === '' || userMessage === '') {
+      setAlert('error')
+      return;
+    }else
+    setAlert('success')
+  
+    // fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
+    fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
       {
         method: "POST",
         headers: {
@@ -44,6 +52,7 @@ function App() {
         setUserName('')
         setUserMessage('')
         setGetMessages(true)
+        setAlert('success')
       })
   }
 
@@ -51,7 +60,8 @@ function App() {
   React.useEffect(() => {
     if (getMessages) {
 
-      fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
+      // fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
+      fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
@@ -81,9 +91,28 @@ const toggleFeedBack = () => {
     setShowFeed(false)
   }
 } 
-
+setTimeout(() => {
+  setAlert('')
+}, 5000);
   return (
     <div className='app-container'>
+      {
+         alert === 'error' ? 
+         <Alert severity="error">Please enter the details!</Alert>
+         :<></>
+      }
+      {
+        alert === 'success' ?
+        <Alert severity="success">Thanks for your Feedback!</Alert>
+        : <></>
+
+      }
+
+      {/* <Alert severity="error">Please enter the details!</Alert> */}
+      
+      {/* <Alert severity="success">Thanks for your Feedback!</Alert> */}
+
+
       <div className="form-container">
         <h2>Feedback Form</h2>
         <TextField
