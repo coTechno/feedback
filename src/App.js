@@ -33,18 +33,7 @@ function App() {
     }else
     setAlert('success')
   
-    // fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
-    fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          userName: userName,
-          userMessage: userMessage
-        }),
-      }
+    fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json',
     )
       .then((res) => res.json())
       .then((data) => {
@@ -60,8 +49,7 @@ function App() {
   React.useEffect(() => {
     if (getMessages) {
 
-      // fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
-      fetch('https://testing-module-7-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
+      fetch('https://zehra-base-default-rtdb.asia-southeast1.firebasedatabase.app/feedback.json')
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
