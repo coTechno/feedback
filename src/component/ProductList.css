@@ -41,7 +41,7 @@ body {
 .item-info {
     position: relative;
     left: 16px;
-    width: 330px;
+    max-width: 328px;
     height: 79px;
   }
 .item-title {
@@ -88,7 +88,7 @@ body {
   color: #444444;
 }
 .item-price {
-  width: 92px;
+  width: fit-content;
   height: 32px;
   font-family: "Montserrat";
   font-style: normal;
