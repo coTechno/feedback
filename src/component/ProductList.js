@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductList.css";
 
+
 function ProductList() {
   const [itemList, setItemList] = React.useState([]);
   React.useEffect(() => {
@@ -32,7 +33,9 @@ function ProductList() {
         {itemList &&
           itemList.map((item) => (
             <div className="item-container" key={item.id}>
-              <img src={item.productImage} alt="" />
+              <div className="image">
+                <img src={item.productImage} alt="" />
+              </div>
               <div className="item-info">
                 <div className="item-title">{item.productName}</div>
 
@@ -111,7 +114,7 @@ function ProductList() {
                 </div>
 
                 <div className="item-footer-btn ">
-                  <button className="item-card-btn btn-primary">
+                  <button className="item-card-btn">
                     ADD TO CART
                   </button>
                 </div>
