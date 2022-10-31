@@ -35,10 +35,10 @@ h5 {
   color: #2a7cc7;
   letter-spacing: 0.1px;
 }
-.btn {
+.banner-btn {
   padding: 15px 40px;
   height: 62px;
-  background: #23a6f0;
+  background: #23A6F0;
   border-radius: 5px;
   font-size: 24px;
   font-weight: 600;
@@ -50,7 +50,7 @@ h5 {
   order: 0;
   flex-grow: 0;
 }
-.btn:hover{
+.banner-btn:hover{
   background: #11141e; 
 }
 .inner-image {

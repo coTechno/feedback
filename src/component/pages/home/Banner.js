@@ -12,7 +12,7 @@ function Banner() {
                         <h1>NEW COLLECTION</h1>
                         <h4>We know how large objects will act,<br />
                             but things on a small scale.</h4>
-                        <button className="btn">SHOP NOW</button>
+                        <button className="banner-btn">SHOP NOW</button>
                     </div>
                 </div>
                 <div className="col-image">

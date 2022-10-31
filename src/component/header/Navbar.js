@@ -21,7 +21,7 @@ function Navbar() {
                   to="/"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  home
+                  Home
                 </Link>
               </li>
               <li>
@@ -29,7 +29,7 @@ function Navbar() {
                   to="/shop"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  shop
+                  Shop
                 </Link>
               </li>
               <li>
@@ -37,7 +37,7 @@ function Navbar() {
                   to="/about"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  about
+                  About
                 </Link>
               </li>
               <li>
@@ -45,7 +45,7 @@ function Navbar() {
                   to="/blog"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  blog
+                  Blog
                 </Link>
               </li>
               <li>
@@ -53,7 +53,7 @@ function Navbar() {
                   to="/contact"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  contact
+                  Contact
                 </Link>
               </li>
               <li>
@@ -61,7 +61,7 @@ function Navbar() {
                   to="/pages"
                   style={{ color: "#737373", textDecoration: "none" }}
                 >
-                  pages
+                  Pages
                 </Link>
               </li>
             </ul>
