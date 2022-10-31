@@ -50,6 +50,9 @@ h5 {
   order: 0;
   flex-grow: 0;
 }
+.btn:hover{
+  background: #11141e; 
+}
 .inner-image {
   /* border: 2px solid black; */
   position: absolute;
