@@ -20,10 +20,7 @@ function Footer() {
     }
     )
     .then(res => res.json())
-    .then(data => {
-      console.log(data)
-      setUserEmail('')
-    })
+    .then(setUserEmail(''))
   }
   return (
     <div className='footer-container'>
