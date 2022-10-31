@@ -96,6 +96,7 @@
   color: #000000;
 }
 .item-card-btn {
+  font-family: "Montserrat";
   width: 328px;
   height: 43px;
   border: none;
@@ -104,6 +105,10 @@
   color: white;
   position: relative;
   top: 10px;
+  font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.1px;
 }
 .item-card-btn:hover{
     background: #1c83bf;

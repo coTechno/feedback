@@ -92,7 +92,7 @@ function Navbar() {
               <li className="login">
                 <Link
                   to="/login"
-                  style={{ color: "#737373", textDecoration: "none" }}
+                  style={{ color: "#23A6F0", textDecoration: "none" }}
                 >
                   Login/Register
                 </Link>
