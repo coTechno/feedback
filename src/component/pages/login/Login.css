@@ -1,0 +1,40 @@
+.container{
+    border-radius: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    background: linear-gradient(90deg, #96e9fb 0%, #abecd6 100%);
+    min-height: 60vh;
+}
+h1{
+    padding-top: 30px;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    flex-direction: column;
+}
+.login-form input{
+    min-width: 270px;
+    padding: 20px;
+    margin: 10px;
+    outline: none;
+    border: 2px solid rgb(37, 43, 66);
+    border-radius: 10px;
+}
+.btn{
+    background-color: rgb(37, 43, 66);
+    padding: 5px 34px;
+    height: 47px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 20px;
+    border: none;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

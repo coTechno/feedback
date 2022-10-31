@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-body {
-  margin: 40px;
-}
 .ProductList-list {
   display: flex;
   overflow-x: scroll;
   gap: 34px;
 }
 .ProductList-header {
-  margin-top: 60px;
+  margin-top: 34px;
   width: 172px;
   height: 32px;
   font-family: "Montserrat";

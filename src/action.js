@@ -1,0 +1,2 @@
+export const ADD_ONE_TO_CART_COUNT = 'ADD_ONE_TO_CART_COUNT'
+export const ADD_ONE_TO_LIKE = 'ADD_ONE_TO_LIKE'

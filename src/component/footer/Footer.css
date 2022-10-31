@@ -1,0 +1,136 @@
+.footer-container {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  padding: 0 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.footer-svg{
+  cursor: pointer;
+}
+.footer-svg svg {
+  margin: 11px;
+  transition: .2s ease-in;
+}
+.footer-svg svg:hover {
+  transform: translateY(-5px);
+}
+
+.footer-item {
+  height: 272px;
+  background: #ffffff;
+  padding: 0 152px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer-table {
+  text-align: left;
+  margin-left: -18px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-table th {
+  padding: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  padding-right: 45px;
+}
+
+.footer-table td {
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-right: 10px;
+  padding: 4px 19px;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 29px;
+}
+
+.get-in-touch h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.get-in-touch form {
+  display: flex;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.get-in-touch input {
+  border: none;
+  font-weight: 400;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  outline: none;
+}
+
+.get-in-touch .btn {
+  box-sizing: border-box;
+  background: #23a6f0;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.get-in-touch .btn:hover {
+  background: #1c83bf;
+}
+.get-in-touch p {
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.footer-bottom {
+  width: 89.4%;
+  padding: 25px 0;
+  background: #fafafa;
+  padding-left: 152px;
+}

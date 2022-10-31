@@ -1,8 +1,9 @@
 import React from "react";
 import "./ProductList.css";
-
+import { useDispatch } from "react-redux";
 
 function ProductList() {
+  const dispatch = useDispatch();
   const [itemList, setItemList] = React.useState([]);
   React.useEffect(() => {
     fetch(
@@ -114,7 +115,21 @@ function ProductList() {
                 </div>
 
                 <div className="item-footer-btn ">
-                  <button className="item-card-btn">
+                  <button
+                    className="item-card-btn"
+                    onClick={() => {
+                      dispatch({ type: "ADD_ONE_TO_CART_COUNT" });
+                        dispatch({
+                          type: "ADD_ONE_TO_CART_LIST",
+                          payload: {
+                            id: item.id,
+                            productImage: item.productImage,
+                            oldPrice: item.oldPrice,
+                            newPrice: item.newPrice
+                          },
+                        });
+                    }}
+                  >
                     ADD TO CART
                   </button>
                 </div>
